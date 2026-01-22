@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Flexbox Navbar</title>
+
+    <style>
+        /* NAVBAR CONTAINER */
+        nav {
+            display: flex;                      /* Enables Flexbox */
+            justify-content: space-between;     /* Spreads logo and menu */
+            align-items: center;                /* Vertically centers items */
+            background-color: #1976d2;
+            padding: 15px 20px;
+            color: white;
+        }
+
+        /* LOGO */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* MENU */
+        .menu {
+            display: flex;
+            gap: 25px;                          /* Space between links */
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVE MENU (Mobile Screens) */
+        @media(max-width: 600px) {
+            nav {
+                flex-direction: column;         /* Stacks items vertically */
+                text-align: center;
+            }
+
+            .menu {
+                flex-direction: column;         /* Stacks links vertically */
+                gap: 10px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MySite</div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+</body>
+</html>

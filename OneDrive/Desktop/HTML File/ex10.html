@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Blog</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style3.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Element selector */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        /* ID selector */
+        #heading {
+            color: blue;     /* Overridden by inline */
+            text-align: center;
+        }
+
+        /* Class selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* Element selector */
+        p {
+            font-size: 18px;
+        }
+
+        /* Demonstrating specificity */
+        #topic {
+            color: purple;      /* ID overrides class from external CSS */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Inline CSS (highest priority) -->
+    <h1 id="heading" style="color: crimson;">Importance of Reading</h1>
+
+    <h2 id="topic" class="section-title">Why Reading Matters</h2>
+
+    <p class="text highlight">
+        Reading improves imagination, vocabulary, and overall knowledge.
+    </p>
+
+    <ul>
+        <li class="point">Enhances vocabulary</li>
+        <li class="point highlight">Boosts creativity</li>
+        <li class="point">Improves focus and concentration</li>
+    </ul>
+
+</body>
+</html>
+
+
+

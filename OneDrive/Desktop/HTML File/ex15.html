@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Layout with Media Queries</title>
+
+    <style>
+        /* Base layout (Desktop default) */
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            flex: 1;
+            padding: 20px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .box1 { background-color: #1976d2; }
+        .box2 { background-color: #d32f2f; }
+        .box3 { background-color: #388e3c; }
+
+        /* =============== TABLET VIEW =============== */
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+            .box {
+                font-size: 18px;
+            }
+        }
+
+        /* =============== MOBILE VIEW =============== */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .box {
+                font-size: 16px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align:center;">Responsive Layout Using Media Queries</h1>
+
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+
+</body>
+</html>

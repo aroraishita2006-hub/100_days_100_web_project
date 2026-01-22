@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Web Layout</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-light">
+
+    <!-- Header Section -->
+    <header class="bg-primary text-white text-center p-4 mb-4">
+        <h1 class="fw-bold">My Bootstrap Web Page</h1>
+        <p class="mb-0">Created using Bootstrap Grid System & Utility Classes</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Row 1: Two Column Layout -->
+        <div class="row mb-4">
+            <div class="col-md-8 p-3 bg-white shadow-sm rounded">
+                <h2 class="text-primary">Main Content</h2>
+                <p>
+                    This is the main content area. Bootstrap’s grid system allows up to 12 columns 
+                    across the page. Here, this section takes 8 columns on medium and larger screens.
+                </p>
+            </div>
+
+            <div class="col-md-4 p-3 bg-info text-white shadow-sm rounded mt-3 mt-md-0">
+                <h3>Sidebar</h3>
+                <p>This sidebar takes 4 columns. It adjusts automatically on small screens.</p>
+            </div>
+        </div>
+
+        <!-- Row 2: Three Equal Columns -->
+        <div class="row text-center mb-4">
+            <div class="col-md-4 p-3 bg-white shadow-sm rounded mb-3">
+                <h4>Column 1</h4>
+                <p>Bootstrap utility classes help with spacing, text alignment, and colors.</p>
+            </div>
+
+            <div class="col-md-4 p-3 bg-white shadow-sm rounded mb-3">
+                <h4>Column 2</h4>
+                <p>On small screens, columns stack; on larger screens, they sit side by side.</p>
+            </div>
+
+            <div class="col-md-4 p-3 bg-white shadow-sm rounded">
+                <h4>Column 3</h4>
+                <p>Bootstrap makes responsive design easier with its flexible grid system.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p class="mb-0">© 2025 My Bootstrap Layout. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

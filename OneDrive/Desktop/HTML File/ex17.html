@@ -1,0 +1,163 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+  <meta charset="UTF-8"> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <title>Hover & Active Effects (Simple Practical)</title> 
+
+  <style> 
+
+    body { 
+
+      font-family: Arial, sans-serif; 
+
+      padding: 20px; 
+
+    } 
+
+ 
+
+    /* Simple button */ 
+
+    .btn { 
+
+      background: #3498db; 
+
+      color: white; 
+
+      padding: 10px 18px; 
+
+      border: none; 
+
+      border-radius: 5px; 
+
+      cursor: pointer; 
+
+      transition: 0.2s; 
+
+    } 
+
+ 
+
+    .btn:hover { 
+
+      background: #1f78b4; /* darker on hover */ 
+
+    } 
+
+ 
+
+    .btn:active { 
+
+      background: #0d4f75; /* pressed effect */ 
+
+      transform: scale(0.96); 
+
+    } 
+
+ 
+
+    /* Link hover */ 
+
+    a { 
+
+      color: #e63946; 
+
+      text-decoration: none; 
+
+      transition: 0.2s; 
+
+    } 
+
+ 
+
+    a:hover { 
+
+      text-decoration: underline; 
+
+      color: #b51f2c; 
+
+    } 
+
+ 
+
+    a:active { 
+
+      color: black; 
+
+    } 
+
+ 
+
+    /* Box hover example */ 
+
+    .box { 
+
+      width: 150px; 
+
+      height: 100px; 
+
+      background: #ddd; 
+
+      padding: 10px; 
+
+      border-radius: 6px; 
+
+      transition: 0.2s; 
+
+    } 
+
+ 
+
+    .box:hover { 
+
+      background: #ccc; 
+
+      transform: translateY(-4px); 
+
+    } 
+
+ 
+
+    .box:active { 
+
+      background: #bbb; 
+
+    } 
+
+  </style> 
+
+</head> 
+
+<body> 
+
+  <h2>Hover & Active Effects (Simple)</h2> 
+
+ 
+
+  <button class="btn">Click Me</button> 
+
+  <br><br> 
+
+ 
+
+  <a href="#">Simple Link</a> 
+
+  <br><br> 
+
+ 
+
+  <div class="box">Hover on me</div> 
+
+ 
+
+</body> 
+
+</html> 
+
+ 
